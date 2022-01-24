@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <script src="creation3_js.js"></script> 
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> 
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <style>
+        h1{
+            color:black;
+            text-align: center;
+            font-size: 50px;
+            font-style: italic;
+        }
+        h2{
+            color:gold;
+            text-align: center;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;    
+            font-size: 45px;    
+        }
+        .search{
+            
+            text-align: center;
+        }
+        .tab{
+            text-align: center;
+            margin: 0 auto;
+            display:block;
+            color:crimson;
+            font-size: 30px;
+        }
+        #mycity
+        {
+            color:blue;
+            font-style: oblique;
+        }
+        
+        .container{
+            font-size: 20px;
+            font-weight: 900;
+            font-style: oblique;
+        }
+    </style>
+</head>
+<body background="https://images.unsplash.com/photo-1558486012-817176f84c6d?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8d2VhdGhlciUyMGFwcHxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60" style='background-repeat: no-repeat; background-position: center; background-size:100%; height: 100%;'style="text-align: center;">
+    <br>
+    <h1>What's Today's Weather?</h1><br><br>
+    <h2>Let's Forecast!!</h2> 
+    <hr><br><br><br>  
+<div class="card">
+    <div class="search">
+       <input type="search" id="mycity" placeholder="Enter city name">
+       <button class="but" onclick="fun()"><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1.4em" width="1.4em" xmlns="http://www.w3.org/2000/svg"><path d="M909.6 854.5L649.9 594.8C690.2 542.7 712 479 712 412c0-80.2-31.3-155.4-87.9-212.1-56.6-56.7-132-87.9-212.1-87.9s-155.5 31.3-212.1 87.9C143.2 256.5 112 331.8 112 412c0 80.1 31.3 155.5 87.9 212.1C256.5 680.8 331.8 712 412 712c67 0 130.6-21.8 182.7-62l259.7 259.6a8.2 8.2 0 0 0 11.6 0l43.6-43.5a8.2 8.2 0 0 0 0-11.6zM570.4 570.4C528 612.7 471.8 636 412 636s-116-23.3-158.4-65.6C211.3 528 188 471.8 188 412s23.3-116.1 65.6-158.4C296 211.3 352.2 188 412 188s116.1 23.2 158.4 65.6S636 352.2 636 412s-23.3 116.1-65.6 158.4z"></path></svg></button>
+    </div>
+</div><br><br><br>
+<hr>
+    <div  class="container">
+    <table class="table table-striped table-success">
+        <thead>
+            <tr>
+                <th>Temperature</th>
+                <th>Humidity</th>
+                <th>Maximum Temperature</th>
+                <th>Minimum Temperature</th>
+                <th>Pressure</th>
+                <th>Image</th>
+                <th>Country Code</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td id="myp"></td>
+                <td id="hum"></td>
+                <td id="tmax"></td>
+                <td id="tmin"></td>
+                <td id="pre"></td>
+                <td><img id="wall.jpeg" src=' '/></td>
+                <td id="con"></td>
+            </tr>
+        </tbody>
+     </table>
+</body>
+</html>
